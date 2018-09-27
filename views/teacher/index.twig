@@ -1,0 +1,43 @@
+{% extends 'layout.twig' %}
+{% block userCaption %}
+    <div class="search right">
+        <form action="" class="relative">
+            <span class="icon-search search-icon"></span>
+            <input type="text" placeholder="Buscar perfil...." class="input">
+            <span class="close-icon icon-pen">X</span>  
+        </form>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container-register">                              
+        <form class="group-content-register" action="" method="post">
+            <div class="wrap-register">
+                <h1 class="center-text">Inicio de sesión de docentes</h1>
+                <p class="center-text">Por favor ingrese el nombre de usuario y su contaseña para iniciar su sesión.</p>
+                <hr>
+                <label for="email"><b>Nombre de usuario</b></label>
+                <input type="text" placeholder="Ingrese su nombre de usuario" name="email" required>
+        
+                <label for="psw"><b>Contraseña</b></label>
+                <input type="password" placeholder="Ingrese su contraseña" name="psw" required>
+        
+                <label>
+                <input type="checkbox" checked="checked" name="remember" 
+                style="margin-bottom:15px"> Recordarme
+                </label>
+        
+                <div class="clearfix-register">
+                <!-- <button type="button" onclick="document.getElementById('id01').style.display='none'" 
+                class="cancelbtn">Crear Cuenta</button> -->
+                <!-- <button type="submit" value="submit" class="cancelbtn"></button> -->
+                <!-- <button type="submit" value="submit" class="signupbtn">Acceder</button> -->
+                <a class="createbtn" href="{{ 'student/registry/' | url }}">Crear cuenta</a>
+                <input class="signupbtn" type="submit" value="Acceder">
+
+                </div>
+            </div>
+        </form>
+    </div>
+        
+{% endblock %}

@@ -1,0 +1,75 @@
+{% extends 'layout.twig' %}
+
+{% block content %}
+    <div class="container-register">                              
+        <form class="group-content-register" action="" method="post">
+            <div class="wrap-register">
+                <h1 class="center-text">Registro de usario.</h1>
+                <p class="center-text">Los campos con <strong class="check">*</strong> son obligatorios.</p>
+                <hr>
+                <label for="email"><b>Código SIS <strong class="check">*</strong></b></label>
+                <input type="text" placeholder="Ingrese su Cod SIS" name="codsis" id="codsis" required>
+
+                <label for="email"><b>CI <strong class="check">*</strong></b></label>
+                <input type="text" placeholder="Ingrese su CI" name="ci" id="ci" required>
+
+                <label for="email"><b>Grado academico <strong class="check">*</strong></b></label>
+                <select name="grade" id="grade">
+                    <option value="">grado</option>
+                    <option value="licenciado">Lincenciado</option>
+                    <option value="doctor">Doctor</option>
+                </select>
+                <br>
+                <br>
+
+
+
+
+
+                <label for="email"><b>Nombres <strong class="check">*</strong></b></label>
+                <input type="text" placeholder="Ingrese su(s) nombre(s)" name="nombre" id="nombre" required>
+
+                <label for="email"><b>Apellido paterno <strong class="check">*</strong></b></label>
+                <input type="text" placeholder="Ingrese su apellido paterno" name="apaterno" id="apaterno" required>
+
+                <label for="email"><b>Apellido materno<strong class="check">*</strong></b></label>
+                <input type="text" placeholder="Ingrese su apellido materno" name="amaterno" id="amaterno" required>
+                
+                <label for="email"><b>Código SIS <strong class="check">*</strong></b></label>
+                <input type="text" placeholder="Ingrese su Cod SIS" name="codsis" id="codsis" required>
+
+
+
+
+
+
+
+
+                <label for="email"><b>Email <strong class="check">*</strong></b></label>
+                <input type="text" placeholder="Ingrese su email" name="email" id="email" required>
+
+                <label for="email"><b>Usuario <strong class="check">*</strong></b></label>
+                <input type="text" placeholder="Ingrese su nombre de usuario" name="usuario" id="usuario" required>
+                
+                <label for="psw"><b>Contraseña <strong class="check">*</strong></b></label>
+                <input type="password" placeholder="Ingrese su contraseña" name="password" id="password" required>
+        
+                <label for="psw-repeat"><b>Confirme su Contraseña <strong class="check">*</strong></b></label>
+                <input type="password" placeholder="Ingrese confirmacion de contraseña" name="password-confirm"id="password-confirm" required>
+                
+                <label>
+                <input type="checkbox" checked="checked" name="remember" id="remember"
+                style="margin-bottom:15px"> Recordarme
+                </label>
+        
+                <p class="center-text">Al crear una cuenta, usted acepta nuestros <a href="#"
+                    style="color:red">Términos & Privacidad</a>.</p>
+        
+                <div class="clearfix-register">
+                    <a class="createbtn" href="{{ 'student/registry/' | url }}">Cancelar</a>
+                    <input class="signupbtn" type="submit" value="Acceder">
+                </div>
+            </div>
+        </form>
+    </div> 
+{% endblock %}
