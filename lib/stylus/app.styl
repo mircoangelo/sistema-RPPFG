@@ -1,0 +1,308 @@
+@import "fonts.styl"  
+
+gris_oscuro = #333333
+gris_claro = #818181
+rojo = #BD255B
+gris_mas_claro = #F0F0F0
+azul_opaco = #343b54
+azul_primario = #1c2b6b
+rojo_claro = #f44336
+
+a
+    text-decoration: none
+
+body
+    font-family: sans-serif
+    font-size 16px
+    //background-image: url("../img/showcase.jpg");
+    
+.image
+    margin: 0
+    
+img    
+    vertical-align: top
+    //para alinear al 100% en vertical cambiando de vertical-align: baseline
+ul
+    margin: 0
+    padding: 0
+.botton-menu
+    position absolute
+    top: 50%
+    margin-top: -10px
+    left: .5em
+    color: gris_oscuro
+
+// .container
+//     padding 1.4rem
+//     font-size 0
+//     text-align center
+
+
+.relative 
+    position: relative
+
+.padding
+    padding: 1em 0
+
+.padding-top-bottom
+    padding 1em
+.margin-top-bottom
+    margin: .5em 0
+.left
+    float left 
+.right
+    float right 
+.wrap
+    width: 1024px
+    
+.round
+    border-radius: 50%
+    overflow hidden
+
+.border-bottom 
+    border-bottom: 1px solid gris_claro
+
+.menu
+    display: none
+    font-family: 'Varela Round', sans-serif
+
+.relative
+    position: relative
+.check
+    color: red
+.center-block
+    margin: 0 auto
+
+.center-text
+    text-align: center
+
+.bold-text
+
+.line-height
+    line-height: 1.5em
+
+.justifi-text
+    text-align: justify
+.right-text
+    text-align: right 
+
+.header
+    height: 3.5em
+    .title
+        font-size: 1.2em
+        text-align: center
+        margin: 0
+        line-height: 3.5em
+
+
+//ini maq form
+*
+    box-sizing: border-box
+.wrap-register
+    input[type=text],
+    input[type=password]
+        width: 100%
+        padding: 15px
+        margin: 5px 0 22px 0
+        display: inline-block
+        border: none
+        background: #f1f1f1
+
+    input[type=text]:focus,
+    input[type=password]:focus
+        background-color: #ddd
+        outline: none
+
+
+
+
+
+.wrap-register
+    padding: 16px
+
+.group-content-register
+    background-color: #fefefe
+    margin: 5% auto
+    border: 1px solid gris_claro
+    width: 60%
+    border-radius: .5em
+    box-shadow: 0 0 13px 0 #000;
+.wrap-register
+    hr
+        border: 1px solid #f1f1f1
+        margin-bottom: 25px
+
+.clearfix-register
+    .cancelbtn,
+    .signupbtn,
+    .createbtn
+        float: left
+        width: 50%
+    .signupbtn
+        background-color: azul_primario
+    input
+        color: white
+        padding: 14px 20px
+        margin: 8px 0
+        border: none
+        cursor: pointer
+        width: 80%
+        opacity: 0.9
+        border-radius: 0 .5em .5em 0
+
+    button:hover
+        opacity: 1
+
+    .cancelbtn
+        padding: .73em 20px
+        background-color: rojo
+        border-radius: .5em 0 0 .5em
+        color: gris_oscuro
+        background: gris_claro
+        //margin-top: .2em
+        text-align: center
+    .createbtn
+        padding: .73em 20px
+        
+        border-radius: .5em 0 0 .5em
+        color: gris_oscuro
+        background: gris_claro
+        //margin-top: .2em
+        text-align: center
+    a
+        margin-top: .5em;
+        //padding: .5em;
+        
+
+.clearfix-register::after
+    content: ""
+    clear: both
+    display: table
+//end maq form
+
+
+.wrap-main
+    //display: none dd
+    //background: orange
+    &.small
+        width: 20em
+        margin 0 auto
+
+.search-icon
+    position: absolute
+    left .5em
+    top .8em
+    color gris_claro
+
+
+.close-icon
+    position absolute
+    top .5em
+    color gris_claro
+    right: .5em
+    font-size: 1.2em
+
+.logo
+    display: none
+
+footer
+	color: rgba(255,255,255, 0.7)
+	background: azul_opaco
+
+
+
+@media screen and (min-width:480px)
+    .image
+        img
+            width: 100%
+            height: auto
+    .wrap-main
+        &.medium
+            width: auto //lo que hace auto es que reseta el valor por defecto del padre
+            //es buena practica poner width: auto que poner width: 100% 
+
+    input 
+        border 1px solid gris_claro
+        height 2.5em
+        border-radius: 5px
+        padding 0 1em 0 2em
+
+@media screen and (min-width:1000px)
+    body
+        background: gris_mas_claro
+    
+    .botton-menu
+        display: none
+
+    .wrap-main
+        
+        &.large
+            margin 0 auto
+            width 62em
+            overflow hidden
+            position relative
+    .img-welcome
+        margin-top 2em
+        width 32.5em 
+        float left
+        .description
+            display: none
+    .text-welcome
+        margin-top 2em
+        width: 22em
+        padding: 0 2em
+        border-left: 1px solid gris_claro
+        display: block
+    .left-welcome
+        width: 50%
+        margin: 0 auto
+    .header
+        height: auto
+        border: none
+        .title
+            display: none
+    .isotipo
+        width: 122px
+    .logo 
+        padding: 1.3em 0
+        overflow: hidden
+        background: white
+        display: block
+    
+    .avatar 
+        width 38px
+        height 38px
+        margin: 0
+    .user
+        background: red;
+    .username
+        color gris_claro
+        position relative
+        top 9px
+        margin-left: .5em
+        &:after //pseudoelemento para construir flecha hacia abajo
+            border-left: 7px solid transparent
+            border-right: 7px solid transparent
+            border-top: 9px solid gris_oscuro
+            content: ""
+            display: inline-block
+            margin-left: .4em
+    .menu
+        display: block
+        background: gris_mas_claro
+        overflow: hidden
+        border-top 1px solid gris_claro
+        .item
+            float left
+            list-style: none
+            a
+                color gris_oscuro
+                cursor: pointer
+                display: block
+                padding: 1em
+                text-transform: uppercase
+                border-top: 5px solid transparent
+                -moz-transition: .3s border-top
+                &:hover
+                    border-top 5px solid gris_claro
+    
